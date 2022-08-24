@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>2022-GSgifted-project</title>
+  <link rel="stylesheet" media="screen" href="css/canvas.css">
+</head>
+<body>
+  <div class="text"><h1>수직이등분선 작도와 각의 이등분선 작도</h1></div>
+  <div class="back">
+    <img class="b_a"
+     src="./images/back.png"
+     width=5%
+     onmouseenter="zoomIn(event)"
+     onmouseleave="zoomOut(event)"
+     onClick="location.href='./index.html'">
+  </div>
+<div class="button-2" style="background: none">
+  <img class="b_a"
+   src="./images/b_angle.png"
+   width=5%
+   onmouseenter="zoomIn(event)"
+   onmouseleave="zoomOut(event)"
+   onClick="location.href='./angle.html'">
+</div>
+  <h1 class="b1" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">1. 점 선정</h1>
+  <h1 class="b2" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">2. 호 그리기</h1>
+  <h1 class="b3" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">3. 점 찍기</h1>
+  <h1 class="b4" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)" onclick="dl()">4. 줄 긋기</h1>
+<canvas id="canvas" width="150px" height="150px"></canvas>
+<script src="./js/draw.js"></script>
+<!--baseJs-->
+<script src="./js/base.js"></script>
+</body>
+</html>
