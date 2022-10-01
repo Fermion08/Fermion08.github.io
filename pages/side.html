@@ -3,60 +3,85 @@
   <head>
     <meta charset="utf-8" />
     <title>2022-GSgifted-project</title>
-    <link rel="stylesheet" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/side.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="text"><h1>수직이등분선 작도와 각의 이등분선 작도</h1></div>
-    <div class="back" style="cursor: pointer">
-      <img
-        class="b_a"
-        src="../images/back.png"
-        width="5%"
+    <header>
+      <a href="#"><i class="fa fa-home"></i></a>
+      <nav>
+        <ul id="nav">
+          <li><a href="#">각의 이등분선의 작도</a></li>
+          <li><a href="#">수직이등분선의 작도</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <div class="back" style="cursor: pointer">
+        <img
+          class="b_a"
+          src="../images/back.png"
+          width="5%"
+          onmouseenter="zoomIn(event)"
+          onmouseleave="zoomOut(event)"
+          onClick="location.href='../index.html'"
+        />
+      </div>
+      <div class="button-2" style="cursor: pointer">
+        <img
+          class="b_a"
+          src="../images/b_angle.png"
+          width="5%"
+          onmouseenter="zoomIn(event)"
+          onmouseleave="zoomOut(event)"
+          onClick="location.href='./angle.html'"
+        />
+      </div>
+      <div class="back" style="cursor: pointer">
+        <img
+          class="b_a"
+          src="../images/back.png"
+          width="5%"
+          onmouseenter="zoomIn(event)"
+          onmouseleave="zoomOut(event)"
+          onClick="location.href='../index.html'"
+        />
+      </div>
+      <h1
+        class="b1"
+        style="cursor: pointer"
         onmouseenter="zoomIn(event)"
         onmouseleave="zoomOut(event)"
-        onClick="location.href='../index.html'"
-      />
-    </div>
-    <div class="button-2" style="cursor: pointer">
-      <img
-        class="b_a"
-        src="../images/b_angle.png"
-        width="5%"
+        onclick="dd()"
+      >
+        1. 호 그리기
+      </h1>
+      <h1
+        class="b2"
+        style="cursor: pointer"
         onmouseenter="zoomIn(event)"
         onmouseleave="zoomOut(event)"
-        onClick="location.href='./angle.html'"
-      />
+        onclick="da()"
+      >
+        2. 점 찍기
+      </h1>
+      <h1
+        class="b3"
+        style="cursor: pointer"
+        onmouseenter="zoomIn(event)"
+        onmouseleave="zoomOut(event)"
+        onclick="dl()"
+      >
+        3. 선 긋기
+      </h1>
+      <canvas id="canvas" width="90%"></canvas>
+      <script src="../js/draw.js"></script>
+      <!--baseJs-->
+      <script src="../js/base.js"></script>
     </div>
-    <h1
-      class="b1"
-      style="cursor: pointer"
-      onmouseenter="zoomIn(event)"
-      onmouseleave="zoomOut(event)"
-      onclick="dd()"
-    >
-      1. 호의 중심 선정
-    </h1>
-    <h1
-      class="b2"
-      style="cursor: pointer"
-      onmouseenter="zoomIn(event)"
-      onmouseleave="zoomOut(event)"
-      onclick="da()"
-    >
-      2. 호 그리기
-    </h1>
-    <h1
-      class="b4"
-      style="cursor: pointer"
-      onmouseenter="zoomIn(event)"
-      onmouseleave="zoomOut(event)"
-      onclick="dl()"
-    >
-      4. 줄 긋기
-    </h1>
-    <canvas id="canvas" width="90%"></canvas>
-    <script src="../js/draw.js"></script>
-    <!--baseJs-->
-    <script src="../js/base.js"></script>
   </body>
 </html>
