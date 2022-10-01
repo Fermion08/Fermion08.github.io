@@ -1,8 +1,14 @@
 header {
-  height: 40px;
+  height: 75px;
   padding: 5px 1px;
   margin: 0;
-  background: #777a92;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  border: 1px solid #414455;
+  background-color: #777a92;
+  position: fixed;
 }
 
 body {
@@ -13,32 +19,45 @@ a {
   color: white;
 }
 
-
+#home {
+  line-height: 75px;
+  float: left;
+  margin: 0;
+  padding: 0 1%;
+  font-size: 400%;
+}
 
 #nav {
+  width: auto;
+  margin: 0 auto;
   list-style: none;
+  float: right;
 }
 
 #nav li {
-  float: right;
+  margin: 0;
+  float: left;
+  padding: 0 15px;
+  /*float: right;
   position: relative;
   margin: 5px 30px;
-  padding: 0;
+  padding: 0;*/
 }
 
 #nav li a {
+  line-height: 75px;
   display: block;
   font-weight: bold;
   font-size: 18px;
-  padding: 7px 8px;
-  margin: 0;
-  color: #25273c;
+  padding: 0 15px;
+  color: #ffffff;
+  /*color: #25273c;*/
   text-decoration: none;
 }
 
-#nav liv:hover > a {
+/*#nav liv:hover > a {
   background: #ffcab2;
   color: black;
   margin: 0;
   padding: 5px;
-}
+}*/
