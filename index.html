@@ -3,37 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <title>2022-GSgifted-project</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+      $("#contents").load('pages/main.html');
+    </script>
   </head>
   <body>
-    <nav>
-      <ul id="nav">
-        <li><a href="#">각의 이등분선의 작도</a></li>
-        <li><a href="#">수직이등분선의 작도</a></li>
-      </ul>
-    </nav>
-    <div class="button1" style="cursor: pointer">
-      <img
-        class="b_a"
-        src="./images/b_angle.png"
-        width="5%"
-        onmouseenter="zoomIn(event)"
-        onmouseleave="zoomOut(event)"
-        onClick="location.href='./pages/angle.html'"
-      />
-    </div>
-
-    <div class="button2" style="cursor: pointer">
-      <img
-        class="b_s"
-        src="./images/b_side.png"
-        width="5%"
-        onmouseenter="zoomIn(event)"
-        onmouseleave="zoomOut(event)"
-        onClick="location.href='./pages/side.html'"
-      />
-    </div>
+    <header>
+      <a onclick="gotoPages('./pages/main.html')"><p id="home" class="fa fa-home"></p></a>
+      <nav>
+        <ul id="nav">
+          <li><a onclick="gotoPages('./pages/side.html')">각의 이등분선의 작도</a></li>
+          <li><a onclick="gotoPages('./pages/angle.html')">수직이등분선의 작도</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script type="text/javascript">
+      function gotoPages(url) {
+        $("#contents").load(url);
+      }
+    </script>
+    <main>
+      <!--<iframe src="./pages/main.html" height="100%"></iframe>-->
+      <div id="contents">
+      </div> 
+    </main>
 
     <!-- scripts -->
     <script src="./js/base.js"></script>
