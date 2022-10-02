@@ -1,3 +1,7 @@
+:root {
+    --imgsize: 100px;
+}
+
 h1 {
     color: 	#e4e5f1;
     padding: 0 5%;
