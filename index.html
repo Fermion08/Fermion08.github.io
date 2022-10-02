@@ -10,10 +10,14 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js">
-      $("#contents").load('pages/main.html');
     </script>
   </head>
   <body>
+    <script>
+      $(document).ready(function() {
+        $("#contents").load('./pages/main.html');
+      });
+    </script>
     <header>
       <a onclick="gotoPages('./pages/main.html')"><p id="home" class="fa fa-home"></p></a>
       <nav>
