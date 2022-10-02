@@ -7,9 +7,20 @@ header {
   top: 0;
   left: 0;
   background-color: #777a92;
-  position: sticky;
+  position: fixed;
 }
 
+main {
+  padding-top: 75px;
+}
+
+article {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  margin: 0;
+}
 
 body {
   background-color: #25273c;
@@ -37,6 +48,7 @@ iframe[seamless] {
 a {
   color: #e4e5f1;
 }
+
 #home {
   line-height: 75px;
   float: left;

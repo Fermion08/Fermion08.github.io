@@ -15,3 +15,25 @@ h3 {
     line-height: 1.5em;
     letter-spacing: 0.2em;
 }
+
+article {
+    display: block;
+}
+
+#bgi {
+    background-attachment: fixed;
+    background-image: url('../images/bgi.svg');
+    background-size: auto;
+    background-position: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#main1 {
+    z-index: 10;
+}
+
+#main2 {
+    display: block;
+}
