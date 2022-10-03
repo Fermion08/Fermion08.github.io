@@ -11,6 +11,12 @@ img {
   width: 100%;
 }
 
+main {
+  margin-top: 75px;
+  display: block;
+  clear: both;
+}
+
 .text {
   color: #ffffff;
   background: none;

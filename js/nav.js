@@ -1,4 +1,13 @@
-const inner = document.querySelector(".inner");
+let navbar = document.getElementById('parentNav');
+const body = document.querySelector('body');
+const section = body.querySelector('.section');
+
+
+setInterval(function() { if(this.window.scrollY === 0) {
+  navbar.animate({ transform: "scale(2)"}, 1000);
+} }, 1000)
+
+/*const inner = document.querySelector(".inner");
 const section = document.querySelector("main");
 
 window.onscroll = function() {
@@ -29,4 +38,4 @@ $(function(){
         overwrite: 5              
       });
           
-  });
+  });*/
