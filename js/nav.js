@@ -1,11 +1,24 @@
-let navbar = document.getElementById('parentNav');
-const body = document.querySelector('body');
-const section = body.querySelector('.section');
 
 
-setInterval(function() { if(this.window.scrollY === 0) {
-  navbar.animate({ transform: "scale(2)"}, 1000);
-} }, 1000)
+
+
+
+function myMove() {
+  var elem = document.getElementById("home");
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if(pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.width = pos + 'px';
+      elem.style.height = pos + 'px';
+    }
+  }
+}
+
+
 
 /*const inner = document.querySelector(".inner");
 const section = document.querySelector("main");

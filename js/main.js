@@ -6,10 +6,10 @@ function handleWheele(event) {
     console.log(event);
 }
 
-setInterval(function() { if(this.window.scrollY === 0) {
-    img.animate({ background: "50",
-  }, 1000);
-} }, 1000)
+// setInterval(function() { if(this.window.scrollY === 0) {
+//     img.animate({ background: "50",
+//   }, 1000);
+// } }, 1000)
 
 // window.addEventListener("load", function() {
 //     if(this.window.scrollY === 0) {

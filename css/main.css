@@ -9,30 +9,37 @@ h1 {
     font-family: poppins-extralight, poppins, sans-serif;
     font-size: 80px;
     line-height:1.2em;
+    background-color:transparent;
 }
 
-main {
-
+body {
+    height: auto;
+    width: 100%;
+    min-height: 1415px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
 }
+
 
 h3 {
     color: 	#e4e5f1;
     padding: 0 5%;
+    padding-bottom: 0;
     font-family: poppins-extralight, poppins, sans-serif;
     font-size: 30px;
     line-height: 1.5em;
     letter-spacing: 0.2em;
+    margin-bottom: 0;
+    background-color:transparent;
+    background: none;
 }
 
 article {
-    display: block;
 }
 
 #bgi {
     background-attachment: fixed;
     background-image: url('../images/bgi.svg');
-
-    background-position: 0;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -40,12 +47,12 @@ article {
 
 #main1 {
     background-size: 100%;
-    background-position: 0;
+
     height: 100%;
     width: 100%;
-    position: absolute;
+    background-color:transparent;
 }
 
 #main2 {
-    display: block;
+
 }

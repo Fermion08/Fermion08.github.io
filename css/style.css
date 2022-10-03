@@ -25,6 +25,11 @@ body {
   margin: 0;
 }
 
+p {
+  margin-bottom: 0;
+  padding: 0;
+}
+
 a {
   color: #e4e5f1;
 }
