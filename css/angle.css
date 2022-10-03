@@ -1,0 +1,12 @@
+#div {
+    padding: 40px;
+    background-image: url( "../images/bgi.svg" );
+}
+
+p {
+    padding: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}

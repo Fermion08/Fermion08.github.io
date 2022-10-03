@@ -7,7 +7,7 @@ header {
   top: 0;
   left: 0;
   background-color: #777a92;
-  position: fixed;
+  position: sticky;
   display: block;
 }
 
