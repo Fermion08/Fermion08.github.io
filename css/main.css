@@ -35,31 +35,31 @@ h3 {
     border: 10px none rgb(255, 255, 255);
     padding: 10px;
     border-radius: 20px;
-    position: relative;
-    width: 10vw;
-    height: 15vw;
+    position: absolute;
+    width: 15vw;
+    height: 20vw;
     background-color: var(--dark);
     display: flex;
 }
 
 #tb1 {
-    left: 60vw;
-    top: -10vh;
+    left: 55vw;
+    top: 100vh;
 }
 
 #tb2 {
-    left: 70vw;
-    top: -10vh;
+    left: 75vw;
+    top: 125vh;
 }
 
 #tb3 {
-    left: 60vw;
-    top: -10vh;
+    left: 55vw;
+    top: 150vh;
 }
 
 #tb4 {
-    left: 70vw;
-    top: -10vh;
+    left: 75vw;
+    top: 175vh;
 }
 
 #section1{
@@ -69,6 +69,15 @@ h3 {
 
 #section1{
     display: block;
+}
+
+#sec2main {
+    font-size: 5vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    border: 1px none white;
+    width: 50vw;
+    height: 50vw;
 }
 
 #bgi {
