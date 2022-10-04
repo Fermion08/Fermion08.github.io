@@ -33,7 +33,7 @@ h3 {
 
 .textBox{
     border: 10px none rgb(255, 255, 255);
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     position: absolute;
     width: 15vw;
@@ -67,11 +67,32 @@ h3 {
     height: 100vh;
 }
 
+#tbt1 {
+    color: var(--dgray);
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 10px;
+}
+
+#tbt2 {
+    color: var(--lgray);
+    font-size: 2.5vw;
+    padding-top: 1.5vw;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 10px;
+}
+
 #section1{
     display: block;
 }
 
 #sec2main {
+    color: var(--purple);
     font-size: 5vw;
     margin-left: 10vw;
     margin-top: 10vh;
