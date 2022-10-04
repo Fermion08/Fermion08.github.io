@@ -30,6 +30,13 @@ h3 {
     background: none;
 }
 
+a {
+
+}
+
+#secmain {
+    
+}
 
 .textBox{
     border: 10px none rgb(255, 255, 255);
@@ -42,8 +49,8 @@ h3 {
     display: flex;
 }
 
-section{
-    border: 1px solid white;
+#mainsec1{
+    
 }
 
 #tb1 {
