@@ -42,6 +42,10 @@ h3 {
     display: flex;
 }
 
+section{
+    border: 1px solid white;
+}
+
 #tb1 {
     left: 55vw;
     top: 100vh;
