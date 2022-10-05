@@ -51,10 +51,11 @@ a {
 .sections{
     width: 100%;
     height: 100vh;
-    padding-top: 10vh;
+    padding-top: 12vh;
 }
 
 #mainsec1{
+    border-top: 1px solid var(--purple);
     background-color: var(--dark);
 }
 
@@ -73,20 +74,44 @@ a {
     font-size: 2vw;
 }
 
-#mainsec1 h1 {
+#mainsec2 {
+    border-top: 1px solid var(--purple);
+    background-color: var(--dark);
 }
 
-
-#mainsec1{
-    
+#mainsec2 #h1 {
+    text-align: center;
+    color: var(--dgray);
 }
 
-#mainsec1{
-    
+#mainsec2 #h2 {
+    height: 70%;
+    border: 2px solid var(--lgray);
+    text-align: center;
+    color: var(--lgray);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2vw;
 }
 
-#mainsec1{
-    
+#mainsec3 {
+    border-top: 1px solid var(--purple);
+    background-color: var(--dark);
+}
+
+#mainsec3 #h1 {
+    text-align: center;
+    color: var(--dgray);
+}
+
+#mainsec3 #h2 {
+    height: 70%;
+    border: 2px solid var(--lgray);
+    text-align: center;
+    color: var(--lgray);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2vw;
 }
 
 #tb1 {
