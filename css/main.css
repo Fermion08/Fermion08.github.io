@@ -6,6 +6,11 @@
     --dgray: #777a92;
 }
 
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
 #title {
     color: 	#e4e5f1;
 }
@@ -42,8 +47,8 @@ a {
     padding: 5px;
     border-radius: 20px;
     position: absolute;
-    width: 15vw;
-    height: 20vw;
+    width: 40vw;
+    height: 15vw;
     background-color: var(--dark);
     display: flex;
 }
@@ -135,22 +140,22 @@ a {
 }
 
 #tb1 {
-    left: 55vw;
+    left: 10vw;
     top: 100vh;
 }
 
 #tb2 {
-    left: 75vw;
+    left: 55vw;
     top: 125vh;
 }
 
 #tb3 {
-    left: 55vw;
+    left: 10vw;
     top: 150vh;
 }
 
 #tb4 {
-    left: 75vw;
+    left: 55vw;
     top: 175vh;
 }
 
