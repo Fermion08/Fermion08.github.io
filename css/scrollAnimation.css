@@ -1,0 +1,14 @@
+[data-scroll] {
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity 2s;
+}
+
+[data-scroll='in'] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+[data-scroll='out'] {
+    opacity: 0;
+}
