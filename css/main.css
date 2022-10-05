@@ -114,6 +114,26 @@ a {
     font-size: 2vw;
 }
 
+#mainsec4 {
+    border-top: 1px solid var(--purple);
+    background-color: var(--dark);
+}
+
+#mainsec4 #h1 {
+    text-align: center;
+    color: var(--dgray);
+}
+
+#mainsec4 #h2 {
+    height: 70%;
+    border: 2px solid var(--lgray);
+    text-align: center;
+    color: var(--lgray);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2vw;
+}
+
 #tb1 {
     left: 55vw;
     top: 100vh;
