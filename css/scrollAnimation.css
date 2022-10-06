@@ -1,14 +1,32 @@
-[data-scroll] {
+.sections[data-scroll] {
     opacity: 0;
     will-change: opacity;
     transition: opacity 2s;
 }
 
-[data-scroll='in'] {
+.sections[data-scroll='in'] {
     opacity: 1;
     transform: scale(1);
 }
 
-[data-scroll='out'] {
+.sections[data-scroll='out'] {
+    opacity: 0;
+}
+
+
+
+#bgi [data-scroll] {
+    opacity: 0;
+    will-change: opacity, transform;
+    transform: translateX(-6rem);
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#bgi [data-scroll='in'] {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#bgi [data-scroll='out'] {
     opacity: 0;
 }
