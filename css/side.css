@@ -1,0 +1,16 @@
+.container{
+    position: relative;
+    width: 335px;
+    height: 335px;
+    margin: 50px auto;
+  }
+  
+  .circle {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: lime;
+    border-radius: 50%;
+    top:-165px;
+    left:-10px;
+  }
