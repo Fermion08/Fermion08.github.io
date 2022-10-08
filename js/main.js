@@ -1,9 +1,9 @@
-let img = document.getElementById('bgi');
-const body = document.querySelector('body');
-const section = body.querySelector('.section');
+let img = document.getElementById("bgi");
+const body = document.querySelector("body");
+const section = body.querySelector(".section");
 
 function handleWheele(event) {
-    console.log(event);
+  console.log(event);
 }
 
 // setInterval(function() { if(this.window.scrollY === 0) {

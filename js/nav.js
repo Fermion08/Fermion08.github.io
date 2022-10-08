@@ -1,24 +1,17 @@
-
-
-
-
-
 function myMove() {
   var elem = document.getElementById("home");
   var pos = 0;
   var id = setInterval(frame, 10);
   function frame() {
-    if(pos == 350) {
+    if (pos == 350) {
       clearInterval(id);
     } else {
       pos++;
-      elem.style.width = pos + 'px';
-      elem.style.height = pos + 'px';
+      elem.style.width = pos + "px";
+      elem.style.height = pos + "px";
     }
   }
 }
-
-
 
 /*const inner = document.querySelector(".inner");
 const section = document.querySelector("main");

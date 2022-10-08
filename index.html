@@ -9,24 +9,31 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="./js/anime.min.js"></script>
   </head>
   <body>
     <script src="./js/nav.js"></script>
     <script>
-      $(document).ready(function() {
-        $("#contents").load('./pages/main.html');
+      $(document).ready(function () {
+        $("#contents").load("./pages/main.html");
       });
     </script>
     <header>
       <nav id="parentNav">
-        <a onclick="gotoPages('./pages/main.html')"><p id="home" class="fa fa-home"></p></a>
+        <a onclick="gotoPages('./pages/main.html')"
+          ><p id="home" class="fa fa-home"></p
+        ></a>
         <ul id="nav">
-          <li><a onclick="gotoPages('./pages/side.html')">수직 이등분선의 작도</a></li>
-          <li><a onclick="gotoPages('./pages/angle.html')">각의 이등분선의 작도</a></li>
+          <li>
+            <a onclick="gotoPages('./pages/side.html')">수직 이등분선의 작도</a>
+          </li>
+          <li>
+            <a onclick="gotoPages('./pages/angle.html')"
+              >각의 이등분선의 작도</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -37,8 +44,7 @@
     </script>
     <main>
       <!--<iframe src="./pages/main.html" height="100%"></iframe>-->
-      <div id="contents">
-      </div> 
+      <div id="contents"></div>
     </main>
 
     <!-- scripts -->

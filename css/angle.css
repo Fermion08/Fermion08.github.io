@@ -1,28 +1,26 @@
 #div {
-    padding: 40px;
-    background-image: url( "../images/bgi.svg" );
+  padding: 40px;
+  background-image: url("../images/bgi.svg");
 }
 
 p {
-    padding: 30px;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    background-color: transparent;
+  padding: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
 }
 
-body
-{
- background-color: #606468;
+body {
+  background-color: #606468;
 }
-#tyre1, #tyre2
-{
-   transform-box: fill-box;
-    transform-origin: center;
+#tyre1,
+#tyre2 {
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
- #padel
-{
-   transform-box: fill-box;
-    transform-origin: 91% 49%;
+#padel {
+  transform-box: fill-box;
+  transform-origin: 91% 49%;
 }
