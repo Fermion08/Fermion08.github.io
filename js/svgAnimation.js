@@ -1,7 +1,7 @@
-let point = "M 100 100 l20 0";
+let point = "M 10 80 C 50 10, 65 10, 95 800 S 150 150, 180 80";
 
 anime({
-  targets: "path",
+  targets: "#li1",
   d: point,
   easing: "easeInOutQuad",
   direction: "alternate",
