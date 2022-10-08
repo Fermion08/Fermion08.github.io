@@ -1,6 +1,8 @@
+let point = "M 100 100 l20 0";
+
 anime({
-  targets: "#bar",
-  width: "100px",
+  targets: "path",
+  d: point,
   easing: "easeInOutQuad",
   direction: "alternate",
   loop: true,
