@@ -1,5 +1,10 @@
-#bar {
-  width: 10px;
-  height: 10px;
-  background-color: aquamarine;
+#canvas {
+  flex-direction: column;
+}
+
+#line {
+  position: relative;
+  width: 50vw;
+  height: 2vh;
+  background-color: aliceblue;
 }
