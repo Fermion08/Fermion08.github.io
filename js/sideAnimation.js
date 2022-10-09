@@ -118,6 +118,45 @@ function bordicLine(tar) {
   );
 }
 
+function bordicLine(tar1, tar2, tar3) {
+  target = [document.querySelectorAll(tar1), document.querySelectorAll(tar2), document.querySelectorAll(tar3)];
+  anime({
+    targets: target,
+    strokeWidth: [2, 4],
+    easing: 'easeInOutCubic',
+    duration: 500,
+    loop: 1}
+    );
+  anime({
+    targets: target,
+    strokeWidth: [4, 2],
+    easing: 'easeInOutCubic',
+    duration: 500,
+    loop: 1}
+  );
+}
+
+function bordicLine(tar1, tar2, tar3, tar4) {
+  target = [document.querySelectorAll(tar1), 
+    document.querySelectorAll(tar2), 
+    document.querySelectorAll(tar3), 
+    document.querySelectorAll(tar4)];
+  anime({
+    targets: target,
+    strokeWidth: [2, 4],
+    easing: 'easeInOutCubic',
+    duration: 500,
+    loop: 1}
+    );
+  anime({
+    targets: target,
+    strokeWidth: [4, 2],
+    easing: 'easeInOutCubic',
+    duration: 500,
+    loop: 1}
+  );
+}
+
 
 document.querySelector('#drawArc').onclick = function(){
   document.getElementById('arc1').style.visibility = "visible";
