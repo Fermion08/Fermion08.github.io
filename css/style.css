@@ -1,3 +1,11 @@
+:root {
+  --dark: #161722;
+  --blue: #25273c;
+  --purple: #cacde8;
+  --lgray: #e4e5f1;
+  --dgray: #777a92;
+}
+
 header {
   height: 75px;
   padding: 0;
