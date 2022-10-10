@@ -53,7 +53,7 @@ function drawDot() {
 }
 
 function drawLine() {
-  speedwagon.innerText="점C와 점D를 연결하여 선을 긎는다."
+  speedwagon.innerText="점C와 점D를 연결하여 선을 긋는다."
   anime({
   targets: line,
   opacity: [0, 1],
