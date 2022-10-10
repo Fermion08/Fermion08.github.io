@@ -114,7 +114,7 @@ function gridOff() {
 
 //#region undraw
 function undrawArc() {
-  speedwagon.innerText=""
+  speedwagon.innerText="수직이등분선 작도"
   anime({
   targets: arc,
   strokeDashoffset: [222.5, 445],

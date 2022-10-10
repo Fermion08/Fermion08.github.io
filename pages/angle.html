@@ -2,6 +2,8 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="page-enter" content="blendTrans(duration=1)">
+    <meta http-equiv="page-exit" content="blendTrans(duration=1)">
     <title>2022-GSgifted-project</title>
     <link rel="stylesheet" href="../css/angle.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -28,8 +30,8 @@
           <li><a id="drawArc1" style="cursor:pointer">1.호 그리기</a></li>
           <li><a id="drawDot1" style="cursor:pointer">2.점 찍기</a></li>
           <li><a id="drawArc2" style="cursor:pointer">3.호 그리기</a></li>
-          <li><a id="drawArc1" style="cursor:pointer">4.점 찍기</a></li>
-          <li><a id="drawLine" style="cursor:pointer">5.</a></li>
+          <li><a id="drawDot2" style="cursor:pointer">4.점 찍기</a></li>
+          <li><a id="drawLine" style="cursor:pointer">5.선 긋기</a></li>
           <li><a id="drawR" style="cursor:pointer">증명</a></li>
           <div style="color: white; font-style: bold;">Grid<label class="switch">
             <input id="gridTF" type="checkbox" checked>
@@ -54,7 +56,7 @@
               각의 이등분선 작도
             </div>
             <div >
-              <h1 style="margin: 0; font-size: 35px; padding-right: 20px; color: var(--purple);">[수직이등분선] 증명</h1>
+              <h1 style="margin: 0; font-size: 35px; padding-right: 20px; color: var(--purple);">[각의 이등분선] 증명</h1>
             </div>
           <svg width="60%" height="77vh" viewBox="0 -5 100 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="float: left; margin-left: 2%;">
 
@@ -153,21 +155,22 @@
             <circle class="arc2" id="arc3" cx="70.75" cy="39.25" r="50" stroke="#EDAE47" stroke-width="2" fill="none"></circle>
             <!-- <circle class="arc2" id="arc2" cx="70.75" cy="39.25" r="50" stroke="#EDAE47" stroke-width="2" fill="none"></circle> -->
 
-            <line class="line" x1="50" y1="0" x2="50" y2="0" stroke="#05F228" stroke-width="2" stroke-linecap="round" style="opacity: 0;"/>
+            <line class="line" x1="0" y1="110" x2="115" y2="62.5" style="stroke-dasharray: 126; stroke-dashoffset: 126;" stroke="#05F228" stroke-width="2" stroke-linecap="round"/>
             
-            <line class="rSide" id="AC" x1="0" y1="80" x2="50" y2="31" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 0;"/>
-            <line class="rSide" id="BC" x1="50" y1="31" x2="100" y2="80" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 0;"/>
-            <line class="rSide" id="BD" x1="100" y1="81" x2="50" y2="129" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 0;"/>
-            <line class="rSide" id="AD" x1="50" y1="129" x2="0" y2="80" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 0;"/>
-            <line class="rSide" id="CD" x1="50" y1="31" x2="50" y2="129" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 0;"/>
-            <line class="rSide" id="AB" x1="0" y1="80" x2="100" y2="80" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 0;"/>
+
+
+            <line class="rSide" id="AC" x1="0" y1="110" x2="70.75" y2="39.25" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 1;"/>
+            <line class="rSide" id="BD" x1="100" y1="110" x2="115" y2="62.5" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 1;"/>
+            <line class="rSide" id="AD" x1="0" y1="110" x2="115" y2="62.5" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 1;"/>
+            <line class="rSide" id="CD" x1="70.75" y1="39.25" x2="115" y2="62.5" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 1;"/>
+            <line class="rSide" id="AB" x1="0" y1="110" x2="100" y2="110" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" style="opacity: 1;"/>
 
             <circle cx="0" cy="110" r="2" fill="#ED6E46"></circle>
             <circle cx="130" cy="110" r="2" fill="#ED6E46"></circle>
             <circle cx="100" cy="10" r="2" fill="#ED6E46"></circle>
             <circle class="dot1" id="dot1" cx="100" cy="110" r="3" fill="#ED6E46" style="opacity: 0;"></circle>
             <circle class="dot1" id="dot1" cx="70.75" cy="39.25" r="3" fill="#ED6E46" style="opacity: 0;"></circle>
-            <circle class="dot" id="dot2" cx="50" cy="129" r="3" fill="#ED6E46" style="opacity: 0;"></circle>
+            <circle class="dot2" id="dot2" cx="115" cy="62.5" r="3" fill="#ED6E46" style="opacity: 0;"></circle>
             
             <text 
               x="-7" y="120"
@@ -194,21 +197,20 @@
             <text 
               style="opacity: 0;"
               class="dot2"
-              x="40" y="135"
+              x="120" y="62.5"
               stroke="white" stroke-width="0.2"
               fill="#ED6E46" font-size="10" font-family="'Leckerli One', cursive">
               D
             </text>
             </svg>
             <h2 style="margin: 0; font-size: 30px; padding-right: 20px; color: var(--purple); padding-top: 3%;">
-              1. <t onclick="bordicLine('#AC')" style="cursor:pointer">선분AC</t>=<t onclick="bordicLine('#BC')" style="cursor:pointer">선분BC</t><br>
-              2. <t onclick="bordicLine('#AD')" style="cursor:pointer">선분AD</t>=<t onclick="bordicLine('#BD')" style="cursor:pointer">선분BD</t><br>
-              3. <t onclick="bordicLine('#CD')" style="cursor:pointer">선분CD</t>는 공통<br>
-              4. ∴<t onclick="bordicLine('#AD', '#CD', '#AC')" style="cursor:pointer">삼각형ADC</t>, <t onclick="bordicLine('#BD', '#CD', '#BC')" style="cursor:pointer">삼각형BDC</t>는 SSS합동<br>
-              5. <t onclick="bordicLine('#AC')" style="cursor:pointer">선분AC</t>=<t onclick="bordicLine('#BC')" style="cursor:pointer">선분BC</t>=<t onclick="bordicLine('#AD')" style="cursor:pointer">선분AD</t>=<t onclick="bordicLine('#BD')">선분BD</t><br>
-              6. ∴<t onclick="bordicLine('#AC', '#BC', '#BD', '#AD')" style="cursor:pointer">사각형ACBD</t>는 마름모<br>
-              7. ∴<t onclick="bordicLine('#AB')" style="cursor:pointer">선분AB</t>와 <t onclick="bordicLine('#CD')" style="cursor:pointer">선분CD</t>는 서로를 수직이등분한다.<br>
-              8. ∴<t onclick="bordicLine('#CD')" style="cursor:pointer">선분CD</t>는 <t onclick="bordicLine('#AB')" style="cursor:pointer">선분AB</t>를 수직이등분한다.</h2>
+              1. <t onclick="bordicLine('#AC')" style="cursor:pointer">선분AC</t>=<t onclick="bordicLine('#AB')" style="cursor:pointer">선분AB</t><br>
+              2. <t onclick="bordicLine('#CD')" style="cursor:pointer">선분CD</t>=<t onclick="bordicLine('#BD')" style="cursor:pointer">선분BD</t><br>
+              3. <t onclick="bordicLine('#AD')" style="cursor:pointer">선분AD</t>는 공통<br>
+              4. ∴<t onclick="bordicLine('#AD', '#AC', '#CD')" style="cursor:pointer">삼각형DAC</t>, <t onclick="bordicLine('#AD', '#AB', '#BD')" style="cursor:pointer">삼각형DAB</t>는 SSS합동<br>
+              5. ∴<t onclick="bordicLine('#AD', '#AC')" style="cursor:pointer">각DAC</t>=<t onclick="bordicLine('#AD', '#AB')" style="cursor:pointer">각DAB</t><br>
+              6. <t onclick="bordicLine('#AC', '#AB')" style="cursor:pointer">각CAB</t>=<t onclick="bordicLine('#AD', '#AC')" style="cursor:pointer">각DAC</t>+<t onclick="bordicLine('#AD', '#AB')" style="cursor:pointer">각DAB</t><br>
+              7. ∴<t onclick="bordicLine('#AD')" style="cursor:pointer">선분AD</t>는 <t onclick="bordicLine('#AC', '#AB')" style="cursor:pointer">각CAB</t>를 이등분한다.<br>
         </div>
           <!-- <section id="mainsec1" class="sections" data-scroll>
             <img src="../images/Algeomath_snapshot_2022-10-9_201930_514.svg" style="width: auto; height: 70%; float: left;">

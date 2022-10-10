@@ -32,7 +32,7 @@ let speedwagon = document.getElementById("speedwagon");
 //#region draw
 
 function drawArc1() {
-  speedwagon.innerText="선분AB의 양 끝점에서 호를 겹치도록 그린다."
+  speedwagon.innerText="점A에서 적당한 크기의 호를 그린다."
   anime({
   targets: arc1,
   strokeDashoffset: [630, 450],
@@ -44,7 +44,7 @@ function drawArc1() {
 }
 
 function drawDot1() {
-  speedwagon.innerText="호가 겹친 부분에 점을 찍는다."
+  speedwagon.innerText="호와 두 선분이 겹친 부분에 점을 찍는다."
   anime({
   targets: dot1,
   r: [5, 3],
@@ -57,7 +57,7 @@ function drawDot1() {
 }
 
 function drawArc2() {
-  speedwagon.innerText="선분AB의 양 끝점에서 호를 겹치도록 그린다."
+  speedwagon.innerText="점B와 점C에서 각 안쪽으로 호를 그린다."
   anime({
   targets: arc2,
   strokeDashoffset: [315, 200],
@@ -68,17 +68,24 @@ function drawArc2() {
   arc2Is = true;
 }
 
-function drawLine() {
-  speedwagon.innerText="점C와 점D를 연결하여 선을 긎는다."
+function drawDot2() {
+  speedwagon.innerText="호가 겹친 부분에 점을 찍는다."
   anime({
-  targets: line,
+  targets: dot2,
+  r: [5, 3],
   opacity: [0, 1],
   easing: 'easeInOutCirc',
-  duration: 0,
-  loop: 1});
+  duration: 1000,
+  loop: 1}
+  );
+  dot2Is = true;
+}
+
+function drawLine() {
+  speedwagon.innerText="점A와 점D를 연결하여 선을 긋는다."
   anime({
     targets: line,
-    y2: [0, 160],
+    strokeDashoffset: [126, 0],
     easing: 'easeInOutCirc',
     duration: 1000,
     loop: 1}
@@ -89,14 +96,8 @@ function drawLine() {
 function drawR() {
   speedwagon.innerText=""
   anime({
-  targets: rSide,
-  opacity: [0, 1],
-  easing: 'easeInOutCirc',
-  duration: 0,
-  loop: 1});
-  anime({
     targets: rSide,
-    strokeDashoffset: [100, 0],
+    strokeDashoffset: [133, 0],
     easing: 'easeInOutCirc',
     duration: 1000,
     loop: 1}
@@ -129,7 +130,7 @@ function gridOff() {
 
 //#region undraw
 function undrawArc1() {
-  speedwagon.innerText=""
+  speedwagon.innerText="각의 이등분선 작도"
   anime({
   targets: arc1,
   strokeDashoffset: [450, 630],
@@ -141,7 +142,7 @@ function undrawArc1() {
 }
 
 function undrawDot1() {
-  speedwagon.innerText="선분AB의 양 끝점에서 호를 겹치도록 그린다."
+  speedwagon.innerText="점A에서 적당한 크기의 호를 그린다."
   anime({
   targets: dot1,
   r: [3, 5],
@@ -154,7 +155,7 @@ function undrawDot1() {
 }
 
 function undrawArc2() {
-  speedwagon.innerText=""
+  speedwagon.innerText="호와 두 선분이 겹친 부분에 점을 찍는다."
   anime({
   targets: arc2,
   strokeDashoffset: [200, 315],
@@ -166,7 +167,7 @@ function undrawArc2() {
 }
 
 function undrawDot2() {
-  speedwagon.innerText="선분AB의 양 끝점에서 호를 겹치도록 그린다."
+  speedwagon.innerText="점B와 점C에서 각 안쪽으로 호를 그린다."
   anime({
   targets: dot2,
   r: [3, 5],
@@ -175,15 +176,14 @@ function undrawDot2() {
   duration: 1000,
   loop: 1}
   );
-  dot1Is = false;
+  dot2Is = false;
 }
 
 function undrawLine() {
   speedwagon.innerText="호가 겹친 부분에 점을 찍는다."
   anime({
     targets: line,
-    y2: [160, 0],
-    opacity: [1, 0],
+    strokeDashoffset: [0, 126],
     easing: 'easeInOutCirc',
     duration: 1000,
     loop: 1}
@@ -195,8 +195,7 @@ function undrawR() {
   speedwagon.innerText="점C와 점D를 연결하여 선을 긎는다."
   anime({
     targets: rSide,
-    strokeDashoffset: [0, 100],
-    opacity: [1, 0],
+    strokeDashoffset: [0, 133],
     easing: 'easeInOutCirc',
     duration: 1000,
     loop: 1}
@@ -227,6 +226,26 @@ function bordicLine(tar) {
     loop: 1}
   );
 }
+
+/** bLineP2 */
+function bordicLine(tar1, tar2) {
+  target = [document.querySelectorAll(tar1), document.querySelectorAll(tar2)];
+  anime({
+    targets: target,
+    strokeWidth: [2, 4],
+    easing: 'easeInOutCubic',
+    duration: 500,
+    loop: 1}
+    );
+  anime({
+    targets: target,
+    strokeWidth: [4, 2],
+    easing: 'easeInOutCubic',
+    duration: 500,
+    loop: 1}
+  );
+}
+
 /** bLineP3 */
 function bordicLine(tar1, tar2, tar3) {
   target = [document.querySelectorAll(tar1), document.querySelectorAll(tar2), document.querySelectorAll(tar3)];
@@ -310,11 +329,23 @@ document.querySelector('#drawArc2').onclick = function(){
   }
 };
 
+document.querySelector('#drawDot2').onclick = function(){
+  if(dot2Is == true) {
+    undrawDot2();
+  } else {
+    if(arc2Is == false) {
+      return;
+    } else {
+      drawDot2();
+    }
+  }
+};
+
 document.querySelector('#drawLine').onclick = function(){
   if(lineIs == true) {
     undrawLine();
   } else {
-    if(dot1Is == false) {
+    if(dot2Is == false) {
       return;
     } else {
       drawLine();
